@@ -33,6 +33,7 @@ public class Hw3 {
             {   t = true;
                 while (i<answer.length())
                 {
+                    if (i>=hiddenWord.length()) {break;}
                     if (hiddenWord.charAt(i)==answer.charAt(i))
                     {
                         givenWord=replaceLetter(givenWord,i,answer.charAt(i));
@@ -57,7 +58,7 @@ public class Hw3 {
         newWord+=newLetter;
         for (int k=i+1;k<givenWord.length();k++)
         {
-            newWord+="#";
+            newWord+=givenWord.charAt(k);
         }
         return (newWord);
     }
