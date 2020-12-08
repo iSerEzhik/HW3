@@ -15,7 +15,6 @@ public class Hw3 {
         String givenWord="###############";
         Scanner scan=new Scanner(System.in);
         boolean t = false;
-        System.out.println(hiddenWord);
         System.out.println("Угадайте слово");
 
         do
